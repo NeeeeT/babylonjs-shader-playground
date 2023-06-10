@@ -1,0 +1,67 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        // "plugin:react/recommended",
+        // "standard-with-typescript"
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:react/jsx-runtime"
+    ],
+    "overrides": [],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaFeatures": {
+          "jsx": true,
+          "tsx": true
+      },
+      "ecmaVersion": "latest",
+      "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint"
+    ],
+    "ignorePatterns": ["**/*.html"],
+    "rules": {
+      "no-console": "warn",
+      "no-undef": "error",
+      "semi": ["error", "always"],
+      "quotes": ["error", "single"],
+      "indent": ["error", 2],
+      "max-depth": ["error", 4],
+      "max-statements": ["error", 100],
+      "max-nested-callbacks": ["error", 3],
+      "object-curly-spacing": ["error", "always"],
+      "curly": "off",
+      "eqeqeq": ["error", "always"],
+      "arrow-spacing": "error",
+      "no-empty-function": "error",
+      "no-empty": "error",
+      "no-extra-parens": "error",
+      "no-lone-blocks": "error",
+      "no-multi-spaces": "error",
+      "no-redeclare": "error",
+      "no-return-assign": "error",
+      "dot-notation": "error",
+      "default-case": "error",
+      "space-before-blocks": "error",
+      "space-before-function-paren": ["error", "never"],
+      "space-in-parens": "error",
+      "space-infix-ops": "error",
+      "space-unary-ops": "error",
+      "comma-dangle": ["error", "never"],
+      "no-mixed-spaces-and-tabs": "error",
+      "no-multiple-empty-lines": "error",
+      "vue/multi-word-component-names": 0,
+      // 
+      "@typescript-eslint/no-this-alias": "warn",
+      "@typescript-eslint/no-unused-vars": "warn"
+    },
+    "globals": {
+      "module": true
+    }
+}
